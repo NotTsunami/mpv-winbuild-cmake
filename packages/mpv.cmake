@@ -32,6 +32,7 @@ ExternalProject_Add(mpv
         --buildtype=release
         --default-library=shared
         --prefer-static
+        -Dc_link_args='-lass -lfontconfig'
         -Db_lto=true
         -Db_ndebug=true
         -Dlibmpv=true
